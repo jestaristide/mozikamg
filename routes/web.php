@@ -24,10 +24,20 @@ use Inertia\Inertia;
     ]);
 });*/
 
-Route::get('/', function (){
-    return Inertia::render('Admin/Dashboard');
-});
+/*Route::get('/admin/', App\Http\Controllers\Admin\AdminController::class)->name('admin.home');*/
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
+
+Route::name('admin.')->domain('admin.mozikamg.test')->group(function () {
+    Route::get('/', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('index');
+    Route::resource('user', \App\Http\Controllers\Admin\UserController::class);
+    Route::resource('artiste', \App\Http\Controllers\Admin\ArtisteController::class);
+    Route::resource('musique', \App\Http\Controllers\Admin\MusiqueController::class);
+});
+
+/*Route::name('admin.')->prefix('admin')->group(function () {
+    Route::get('/', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('index');
+    Route::resource('user', \App\Http\Controllers\Admin\UserController::class);
+});*/

@@ -30,7 +30,8 @@
         @routes
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
+    <!--<body class="font-sans antialiased">-->
+    <body>
         @inertia
 
         <script src="{{asset('asset/js/jquery-3.5.1.min.js')}}"></script>
@@ -39,4 +40,5 @@
         <script src="{{asset('asset/js/smooth-scrollbar.js')}}"></script>
         <script src="{{asset('asset/js/select2.min.js')}}"></script>
         <script src="{{asset('asset/js/admin.js')}}"></script>
+    </body>
 </html>
