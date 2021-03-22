@@ -16,8 +16,12 @@
         <link rel="stylesheet" href="{{ asset('asset/css/bootstrap-reboot.min.css') }}">
         <link rel="stylesheet" href="{{ asset('asset/css/bootstrap-grid.min.css') }}">
         <link rel="stylesheet" href="{{ asset('asset/css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ asset('asset/css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('asset/css/slider-radio.css') }}">
         <link rel="stylesheet" href="{{ asset('asset/css/select2.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('asset/css/admin.css') }}">
+        <link rel="stylesheet" href="{{ asset('asset/css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ asset('asset/css/plyr.css') }}">
+        <link rel="stylesheet" href="{{ asset('asset/css/main.css') }}">
 
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="/asset/icon/favicon-32x32.png" sizes="32x32">
@@ -36,9 +40,12 @@
 
         <script src="{{asset('asset/js/jquery-3.5.1.min.js')}}"></script>
         <script src="{{asset('asset/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('asset/js/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('asset/js/slider-radio.js')}}"></script>
         <script src="{{asset('asset/js/jquery.magnific-popup.min.js')}}"></script>
         <script src="{{asset('asset/js/smooth-scrollbar.js')}}"></script>
         <script src="{{asset('asset/js/select2.min.js')}}"></script>
         <script src="{{asset('asset/js/admin.js')}}"></script>
+        <script src="{{asset('asset/js/plyr.min.js')}}"></script>
     </body>
 </html>
