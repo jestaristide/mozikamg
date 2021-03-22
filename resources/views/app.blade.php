@@ -45,7 +45,7 @@
         <script src="{{asset('asset/js/jquery.magnific-popup.min.js')}}"></script>
         <script src="{{asset('asset/js/smooth-scrollbar.js')}}"></script>
         <script src="{{asset('asset/js/select2.min.js')}}"></script>
-        <script src="{{asset('asset/js/admin.js')}}"></script>
+        <script src="{{asset('asset/js/main.js')}}"></script>
         <script src="{{asset('asset/js/plyr.min.js')}}"></script>
     </body>
 </html>
