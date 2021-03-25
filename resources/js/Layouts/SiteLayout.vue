@@ -13,19 +13,19 @@
                                 <span></span>
                             </button>
 
-                            <inertia-link :href="route('site.index')" class="header__logo">
+                            <a :href="route('site.index')" class="header__logo">
                                 <img src="/asset/img/logo.svg" alt="Movies & TV Shows, Online cinema HTML Template">
-                            </inertia-link>
+                            </a>
 
                             <ul class="header__nav">
                                 <li class="header__nav-item">
-                                    <inertia-link class="header__nav-link" href="#" role="button">Accueil</inertia-link>
+                                    <inertia-link class="header__nav-link" :href="route('site.index')" role="button">Accueil</inertia-link>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#">Artiste</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="pricing.html">Musiques</a>
+                                    <inertia-link class="header__nav-link" :href="route('site.musique.index')">Musiques</inertia-link>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="pricing.html">Articles</a>
@@ -42,7 +42,7 @@
                                         <li><a href="about.html">Tarifs</a></li>
                                         <li><a href="profile.html">Services</a></li>
                                         <li><a href="contacts.html">Termes et conditions</a></li>
-                                        <li><a href="interview.html">Contacts</a></li>
+                                        <li><inertia-link :href="route('site.contact')">Contacts</inertia-link></li>
                                     </ul>
                                 </li>
                             </ul>

@@ -39,6 +39,12 @@ Route::name('admin.')->domain('admin.mozikamg.test')->group(function () {
 });
 
 Route::get('/', [App\Http\Controllers\PageController::class, 'index'])->name('site.index');
+Route::get('/contact', [App\Http\Controllers\PageController::class, 'contact'])->name('site.contact');
+Route::get('/politique-d-utilisation', [App\Http\Controllers\PageController::class, 'privacy_policy'])->name('site.contact');
+Route::get('/musique/', [App\Http\Controllers\MusiqueController::class, 'index'])->name('site.musique.index');
+Route::get('/musique/{slug}', [App\Http\Controllers\MusiqueController::class, 'show'])->name('site.musique.show');
+Route::get('/artiste/', [App\Http\Controllers\ArtisteController::class, 'index'])->name('site.artiste.index');
+Route::get('/artiste/{slug}', [App\Http\Controllers\ArtisteController::class, 'show'])->name('site.artiste.show');
 
 /*Route::name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('index');
