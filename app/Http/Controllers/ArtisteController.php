@@ -13,4 +13,10 @@ class ArtisteController extends Controller
 
         return Inertia::render('Main/ArtistHome', compact('artistes'));
     }
+
+    public function show($slug) {
+        $artiste = Artiste::where('slug', $slug)->first();
+
+        return Inertia::render('Main/ArtistDetails', compact('artiste'));
+    }
 }

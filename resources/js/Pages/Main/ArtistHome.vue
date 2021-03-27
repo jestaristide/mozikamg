@@ -36,7 +36,6 @@
                 </div>
             </div>
         </section>
-        {{ artistes}}
     </site-layout>
 </template>
 

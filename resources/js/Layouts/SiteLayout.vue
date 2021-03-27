@@ -22,7 +22,7 @@
                                     <inertia-link class="header__nav-link" :href="route('site.index')" role="button">Accueil</inertia-link>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Artiste</a>
+                                    <inertia-link class="header__nav-link" :href="route('site.artiste.index')">Artiste</inertia-link>
                                 </li>
                                 <li class="header__nav-item">
                                     <inertia-link class="header__nav-link" :href="route('site.musique.index')">Musiques</inertia-link>

@@ -1,6 +1,6 @@
 <template>
     <site-layout>
-        sdlkjfsdk
+        {{ artiste }}
     </site-layout>
 </template>
 
@@ -9,6 +9,7 @@
     export default {
         components : {
             SiteLayout,
-        }
+        },
+        props : ['artiste']
     }
 </script>
