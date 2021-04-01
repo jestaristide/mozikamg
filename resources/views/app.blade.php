@@ -21,7 +21,8 @@
         <link rel="stylesheet" href="{{ asset('asset/css/select2.min.css') }}">
         <link rel="stylesheet" href="{{ asset('asset/css/magnific-popup.css') }}">
         <link rel="stylesheet" href="{{ asset('asset/css/plyr.css') }}">
-        <link rel="stylesheet" href="{{ asset('asset/css/main.css') }}">
+        <!--<link rel="stylesheet" href="{{ asset('asset/css/main.css') }}">-->
+        <link rel="stylesheet" href="{{ asset('asset/css/admin.css') }}">
 
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="/asset/icon/favicon-32x32.png" sizes="32x32">
@@ -45,7 +46,8 @@
         <script src="{{asset('asset/js/jquery.magnific-popup.min.js')}}"></script>
         <script src="{{asset('asset/js/smooth-scrollbar.js')}}"></script>
         <script src="{{asset('asset/js/select2.min.js')}}"></script>
-        <script src="{{asset('asset/js/main.js')}}"></script>
+        <!--<script src="{{asset('asset/js/main.js')}}"></script>-->
+        <script src="{{asset('asset/js/admin.js')}}"></script>
         <script src="{{asset('asset/js/plyr.min.js')}}"></script>
     </body>
 </html>

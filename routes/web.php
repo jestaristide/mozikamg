@@ -33,6 +33,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::name('admin.')->domain('admin.mozikamg.test')->group(function () {
 //Route::name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('index');
+    Route::put('/file/artiste/cover', [App\Http\Controllers\Admin\AdminController::class, 'artist_cover'])->name('file.artiste.cover');
     Route::resource('user', \App\Http\Controllers\Admin\UserController::class);
     Route::resource('artiste', \App\Http\Controllers\Admin\ArtisteController::class);
     Route::resource('musique', \App\Http\Controllers\Admin\MusiqueController::class);
