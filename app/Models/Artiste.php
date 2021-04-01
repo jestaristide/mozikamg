@@ -10,4 +10,8 @@ class Artiste extends Model
     use HasFactory;
 
     protected $fillable = ['first_name','last_name','artist_name','slug','birthdate','birtplace','description','tag','address','email','tel','profil_link', 'cover_link'];
+
+    public function musiques() {
+        return $this->belongsToMany(Artiste::class);
+    }
 }

@@ -29,4 +29,8 @@ class Musique extends Model
         '1080p_link',
         '4k_link',
     ];
+
+    public function artistes() {
+        return $this->belongsToMany(Artiste::class);
+    }
 }
