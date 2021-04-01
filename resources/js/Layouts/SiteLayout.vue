@@ -101,27 +101,18 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-8 col-lg-6 col-xl-4 order-3 order-lg-2 order-md-3 order-xl-3">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 order-3 order-lg-2 order-md-3 order-xl-3">
                         <div class="row">
                             <div class="col-12">
                                 <h6 class="footer__title">En direct</h6>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="footer__nav">
                                     <a href="live.html">Live Facebook</a>
                                     <a href="live.html">Live YouTube</a>
                                     <a href="live.html">Live Sûre Site</a>
                                     <a href="live.html">Live Performance</a>
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="footer__nav">
-                                    <a href="category.html">TV Shows</a>
-                                    <a href="category.html">Movies</a>
-                                    <a href="category.html">Kids</a>
-                                    <a href="category.html">Collections</a>
                                 </div>
                             </div>
 

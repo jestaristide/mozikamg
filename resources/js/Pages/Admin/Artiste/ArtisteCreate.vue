@@ -12,7 +12,7 @@
                                 <div class="col-12 col-sm-6 col-md-12">
                                     <div class="form__img">
                                         <label for="form__img-upload">Upload Profil (190 x 270)</label>
-                                        <input @change="presaveProfil" id="form__img-upload" name="form__img-upload" type="file" v-model="profil" accept=".png, .jpg, .jpeg">
+                                        <input @change="presaveProfil" id="form__img-upload" name="form__img-upload" type="file" accept=".png, .jpg, .jpeg">
                                         <img id="form__img" src="#" alt=" ">
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@
                                 <div class="col-12">
                                     <div class="form__gallery">
                                         <label id="gallery1" for="form__gallery-upload">Upload photos</label>
-                                        <input v-model="cover" @change="presaveCover" data-name="#gallery1" id="form__gallery-upload" name="gallery" class="form__gallery-upload" type="file" accept=".png, .jpg, .jpeg" multiple="">
+                                        <input @change="presaveCover" data-name="#gallery1" id="form__gallery-upload" name="gallery" class="form__gallery-upload" type="file" accept=".png, .jpg, .jpeg" multiple="">
                                     </div>
                                 </div>
                             </div>
