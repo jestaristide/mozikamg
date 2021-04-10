@@ -14,8 +14,9 @@ class MusiqueController extends Controller
         return Inertia::render('Main/MusicHome', compact('musiques'));
     }
 
-    public function show()
+    public function show($slug)
     {
-        return Inertia::render('Main/MusicDetails');
+        $musique = Musique::where('slug', $slug)->first();
+        return Inertia::render('Main/MusicDetails', compact('musique'));
     }
 }

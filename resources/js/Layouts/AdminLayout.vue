@@ -126,3 +126,7 @@ export default {
 
 }
 </script>
+
+<style>
+@import url("//asset/css/admin.css");
+</style>
